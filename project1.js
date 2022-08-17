@@ -1,15 +1,15 @@
-const hourEl = document.getElementById( "hours" );
-const minutesEl = document.getElementById( "minutes" );
-const secondsEl = document.getElementById( "seconds" );
-const ampmEl = document.getElementById( "ampm" );
 
-function updateclock() {
-    let h = new Date().getHours()
-    let m = new Date().getMinutes()
-    let s = new Date().getSeconds()
-    let ampm = "AM"
 
-    if ( h > 12 ) {
-        h = h - 12
-        ampm = "PM"
-    }
+let date = new Date();
+
+let hours = date.getHours();
+document.getElementById( "hours" ).innerHTML = hours;
+
+let minutes = date.getMinutes();
+document.getElementById( "minutes" ).innerHTML = minutes;
+
+let seconds = date.getSeconds();
+document.getElementById( "seconds" ).innerHTML = seconds;
+
+let date1 = date.getDate();
+document.getElementById( "date1" ).innerHTML = date1;
